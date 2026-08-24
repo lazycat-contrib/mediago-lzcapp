@@ -5,10 +5,10 @@ application:
       backend: http://mediago:8899/
   public_path:
     - /
-
 services:
   mediago:
-    image: caorushizi/mediago:3.5.0
+    # upstream: docker.io/caorushizi/mediago:3.5.0
+    image: docker.1ms.run/caorushizi/mediago:3.5.0
     environment:
       - TZ=Asia/Shanghai
     binds:
