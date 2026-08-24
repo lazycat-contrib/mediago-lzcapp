@@ -1,0 +1,17 @@
+application:
+  subdomain: mediago
+  upstreams:
+    - location: /
+      backend: http://mediago:8899/
+  public_path:
+    - /
+
+services:
+  mediago:
+    image: caorushizi/mediago:3.5.0
+    environment:
+      - TZ=Asia/Shanghai
+    binds:
+      - /lzcapp/var/data:/app/data
+      - /lzcapp/cache/logs:/app/logs
+    port: 8899

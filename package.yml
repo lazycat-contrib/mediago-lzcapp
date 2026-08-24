@@ -1,0 +1,20 @@
+package: community.lazycat.app.mediago
+version: 3.5.0
+name: MediaGo
+description: "Cross-platform video downloader — sniff and grab m3u8/HLS streams, Bilibili, YouTube and more"
+min_os_version: 1.5.0
+homepage: https://github.com/mediago-dev/mediago
+author: mediago-dev
+license: MIT
+
+locales:
+  zh:
+    name: "MediaGo"
+    description: "跨平台视频下载器 — 嗅探并抓取 m3u8/HLS 流、Bilibili、YouTube 等"
+
+permissions:
+  required:
+    - net.internet
+  optional:
+    - document.read
+    - document.write
